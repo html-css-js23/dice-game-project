@@ -125,7 +125,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ................................................................................................................................................................
         ................................................................................................................................................................
         `)
-    tiles.setCurrentTilemap(tilemap`level`)
+    tiles.setCurrentTilemap(tilemap`level1`)
     Zoom.SetZoomFilter(1.5, Mode.Center)
     if (controller.A.isPressed()) {
         timer.after(3500, function () {
@@ -173,7 +173,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile8`, function (sprite, l
 	
 })
 let mySprite: Sprite = null
-mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
+mySprite = sprites.create(, SpriteKind.Player)
 scene.setBackgroundImage(img`
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
     9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
